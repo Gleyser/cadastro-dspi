@@ -62,14 +62,12 @@
         <br>
 		<img class="mb-4" src="${images}/logo.png" alt="" width="425"
 			height="125">
-		<h3>
-			<img class="mb-4" src="${images}/imagem.png" alt="" width="105"
-				height="103"> Desafio SENAI de Projetos Integradores - 2020	<br>
-				Seleção de Demandas	
-		</h3>
+		
 		
 		<h5>
-		Abaixo listamos as demandas participantes do DSPI. Selecione uma demanda com vaga disponível e clique no botão verde para se inscrever na demanda.
+		As demandas participantes do DSPI estão listadas a seguir. 
+		<br>
+		Selecione uma demanda com vaga disponível e clique no botão verde para se inscrever na demanda.
 		
 		Insira os dados necessários com calma para evitar erros. <br>
 		</h5>	
@@ -138,11 +136,11 @@ Dependência de 100% do fator humano na organização e controle do estoque traz gr
               <!-- Collapsable Card Example -->
               <div class="card shadow mb-4">
                 <!-- Card Header - Accordion -->
-                <a href="#collapseVagasOcupadas" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                <a href="#collapseVagasOcupadas" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
                   <h4 class="m-0 font-weight-bold text-primary">Demandas Ocupadas</h4>
                 </a>
                 <!-- Card Content - Collapse -->
-                <div class="collapse show" id="collapseVagasOcupadas">
+                <div class="collapse" id="collapseVagasOcupadas">
                   <div class="card-body">
                     	<!-- Tabela resumo -->
 					<div class="card-body">
@@ -205,7 +203,7 @@ Dependência de 100% do fator humano na organização e controle do estoque traz gr
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Inscrição na demanda</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Inscrição na demanda Desenvolver novos produtos ou processos a base da casca da banana</h5>
 					<button class="close" type="button" data-dismiss="modal"
 						aria-label="Close">
 						<span aria-hidden="true">×</span>
@@ -214,15 +212,47 @@ Dependência de 100% do fator humano na organização e controle do estoque traz gr
 				<div class="modal-body">
 					<form:form action="editaranotitulodameta" method="post">
 						<div class="row">
-							<input type="hidden" name="id" value="lalalala" />
-							<div class="col-md-9 mb-3">
-								<label for="address">Título</label> <input type="text"
-									class="form-control" name="titulo" id="titulo"
-									value="lelelelele" required>
-								<div class="invalid-feedback">O título do plano de metas é
+							<input type="hidden" name="id" value="" />
+							<div class="col-md-12 mb-3">
+								<label for="nome">Nome completo</label> <input type="text"
+									class="form-control" name="nome" id="nome"
+									required>
+								<div class="invalid-feedback">O nome completo é
 									obrigatório</div>
-							</div>				
-								
+							</div>
+							
+							<div class="col-md-12 mb-3">
+								<label for="nome">E-mail</label> <input type="text"
+									class="form-control" name="email" id="email"
+									required>
+								<div class="invalid-feedback">Email é
+									obrigatório</div>
+							</div>
+							
+							<div class="col-md-12 mb-3">
+							<label for="turma">Selecione a sua turma</label> <select
+								class="form-control" id="exampleFormControlSelect1">
+								<option selected>Clique e selecione a turma...</option>
+								<option>APT.001.422 - TÉCNICO EM ADMINISTRAÇÃO (manhã)</option>
+								<option>APT.001.423 - TÉCNICO EM ADMINISTRAÇÃO (tarde)</option>
+								<option>APT.001.424 - TÉCNICO EM ADMINISTRAÇÃO (tarde)</option>
+								<option>TEC.001.009 - TÉCNICO EM AUTOMAÇÃO INDUSTRIAL (manhã)</option>
+								<option>TEC.001.010 - TÉCNICO EM AUTOMAÇÃO INDUSTRIAL (tarde)</option>
+								<option>APT.003.050 - TÉCNICO EM ELETROMECÂNICA (tarde)</option>
+								<option>APT.004.149 - TÉCNICO EM MECÂNICA (manhã)</option>
+								<option>TEC.026.001 - TÉCNICO EM MECATRÔNICA (manhã)</option>
+								<option>TEC.026.002 - TÉCNICO EM MECATRÔNICA (tarde)</option>
+							</select>
+							
+							</div>
+
+							
+
+
+
+
+
+
 							<div class="col-md-12 mb-5">
 
 								<button class="btn btn-success" type="submit">Salvar</button>
@@ -241,7 +271,7 @@ Dependência de 100% do fator humano na organização e controle do estoque traz gr
 
 
 	<p class="mt-5 mb-3 text-muted text-center">
-		&copy;SENAI-PB - CEP Stenio Lopes <br> Gleyser Guimarães
+		&copy;SENAI-PB - CEP Stenio Lopes 
 	</p>
 
 </body>
